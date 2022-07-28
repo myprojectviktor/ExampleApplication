@@ -2,12 +2,12 @@ version: 2.1
 
 workflows:
   version: 2
-    build:
-      jobs:
-        - build:
-            filters:
-              branches:
-                only: -main
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: -main
 
 jobs:
   build:
